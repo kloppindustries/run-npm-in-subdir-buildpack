@@ -10,6 +10,7 @@ BUILD_DIR=${1:-}
 
 echo "-----> Copying SPA"
 cd "$BUILD_DIR/vscode"
+npm install
 npm run compile:webapp
 
 if [ ! -f "$BUILD_DIR/dashboard/core/static/spa/trace/main.css" ]; then
