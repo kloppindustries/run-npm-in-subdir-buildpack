@@ -13,11 +13,11 @@ cd "$BUILD_DIR/vscode"
 npm install
 npm run compile:webapp
 
-if [ ! -f "$BUILD_DIR/dashboard/core/static/spa/trace/main.css" ]; then
+if [ ! -f "$BUILD_DIR/dashboard/core/static/spa/main.css" ]; then
     echo "       Stylesheet for SPA was not compiled"
     exit 1
 fi
-if [ ! -f "$BUILD_DIR/dashboard/core/static/spa/trace/main.js" ]; then
+if [ ! -f "$BUILD_DIR/dashboard/core/static/spa/main.js" ]; then
     echo "       JavaScript for SPA was not compiled"
     exit 2
 fi
